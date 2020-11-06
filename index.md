@@ -15,6 +15,8 @@ We are making use of a [Spotify dataset](https://www.kaggle.com/yamaerenay/spoti
 
 #### Visualizations
 
+<img src="img/correlation_heatmap.svg"/>
+
 TODO
 
 #### Results
