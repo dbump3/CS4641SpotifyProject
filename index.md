@@ -45,6 +45,24 @@ for i in data_num.columns:
 
 To see the correlations that exist between every single numerical feature, we ran the following heatmap, which already displays some interesting relations.
 
+```py
+# visualize correlations between numerical attributes with heatmap
+sns.heatmap(data_num.corr())
+```
+
+<img src="img/corr.png"/>
+
+An interesting exploration of the data was the comparison between the categorization of a song as 'explicit' and features such as energy, speechiness, and year.
+
+
+```py
+# compare Explicit rating across some numerical variables
+pd.pivot_table(data, index = 'explicit', values = ['year', 'instrumentalness', 'acousticness', 'energy', 'speechiness'])
+```
+
+<img src="img/piv.png"/>
+
+
 
 
 The first thing we did as we approached the problem of clustering our data was to create a heatmap showing the correlation of various features. This would prove useful later when deciding which values to compare on a scatterplot.
