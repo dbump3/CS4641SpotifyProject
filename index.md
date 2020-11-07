@@ -20,23 +20,23 @@ We are making use of a [Spotify dataset](https://www.kaggle.com/yamaerenay/spot
 
 The first thing we did after reading the data from the spotify dataset was separate the columns into numerical features and categorical features.
 
-
+```py
 data_num = data[['acousticness', 'danceability', 'duration_ms', 'energy',
        'instrumentalness', 'liveness', 'loudness', 'popularity',
        'speechiness', 'tempo', 'valence', 'year']]
 data_cat = data[['explicit', 'mode', 'key']]
 
-
+```
 
 Then, we plotted the distributions of each numeric feature to get a sense of how each variable is distributed. The following are just some of the generated histograms.
 
-
+```py
 #distributions for all numeric variables 
 for i in data_num.columns:
     plt.hist(data_num[i])
     plt.title(i)
     plt.show()
-
+```
 
 <img src="img/num1.png"/>
 <img src="img/num2.png"/>
