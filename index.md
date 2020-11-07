@@ -9,7 +9,7 @@
 
 # Summary
 
-We are making use of a [Spotify dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks/tasks?taskId=2173) consisting of 160,000 songs in order to interpret what makes a song popular... TODO add more
+We are making use of a [Spotify dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks) consisting of 160,000 songs ranging from the years 1921 to 2020 in order to understand and interpret what numerical features make a song popular and how the definition of these numerical features has changed over time.
 
 # Unsupervised Learning
 
