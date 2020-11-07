@@ -9,13 +9,43 @@
 
 # Summary
 
-We are making use of a [Spotify dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks) consisting of 160,000 songs ranging from the years 1921 to 2020 in order to understand and interpret what numerical features make a song popular and how the definition of these numerical features has changed over time.
+
+We are making use of a [Spotify dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks) consisting of 160,000 songs in order to understand the interesting correlations that exist between a song's popularity and other features such as instrumentalness, speechiness, danceability, etc. We believe that by making use of different visualizations and agglomeration methods, insightful relations might be discovered. Ultimately, our goal is to apply data science and machine learning to better understand what makes a song popular.
 
 # Unsupervised Learning
 
 ## Hierarchical Agglomerative Clustering
 
 ### Visualizations
+
+The first thing we did after reading the data from the spotify dataset was separate the columns into numerical features and categorical features.
+
+
+data_num = data[['acousticness', 'danceability', 'duration_ms', 'energy',
+       'instrumentalness', 'liveness', 'loudness', 'popularity',
+       'speechiness', 'tempo', 'valence', 'year']]
+data_cat = data[['explicit', 'mode', 'key']]
+
+
+
+Then, we plotted the distributions of each numeric feature to get a sense of how each variable is distributed. The following are just some of the generated histograms.
+
+
+#distributions for all numeric variables 
+for i in data_num.columns:
+    plt.hist(data_num[i])
+    plt.title(i)
+    plt.show()
+
+
+<img src="img/num1.png"/>
+<img src="img/num2.png"/>
+<img src="img/num3.png"/>
+
+
+To see the correlations that exist between every single numerical feature, we ran the following heatmap, which already displays some interesting relations.
+
+
 
 The first thing we did as we approached the problem of clustering our data was to create a heatmap showing the correlation of various features. This would prove useful later when deciding which values to compare on a scatterplot.
 
