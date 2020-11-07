@@ -3,6 +3,8 @@
 * [Summary](#summary)
 * [Unsupervised Learning](#unsupervised-learning)
   * [Hierarchical Agglomerative Clustering](#hierarchical-agglomerative-clustering)
+    * [Visualizations](#visualizations)
+    * [Results](#results)
   * [K-means Clustering](#k-means-clustering)
 
 # Summary
@@ -21,9 +23,9 @@ Correlation of Features
 
 Denrogram
 
-TODO
+<img src="img/dendrogram.svg"/>
 
-Loudness v. Duration after Clustering
+Loudness v. Duration (ms) after Clustering
 
 <img src="img/hac_clustering.svg"/>
 
