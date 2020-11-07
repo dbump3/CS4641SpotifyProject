@@ -63,9 +63,7 @@ pd.pivot_table(data, index = 'explicit', values = ['year', 'instrumentalness', '
 <img src="img/piv.png"/>
 
 
-
-
-The first thing we did as we approached the problem of clustering our data was to create a heatmap showing the correlation of various features. This would prove useful later when deciding which values to compare on a scatterplot.
+Another heatmap showing the correlation of various features. This would prove useful later when deciding which values to compare on a scatterplot.
 
 #### Correlation of Features
 <img src="img/correlation_heatmap.svg"/>
@@ -86,4 +84,14 @@ The result of the hierarchical agglomerative clustering with 2 clusters is 2 cle
 
 ## K-means Clustering
 
-TODO
+Finally, we performed K-means on the data. Showing interesting results.
+
+```py
+plt.style.use("fivethirtyeight")
+plt.plot(range(1, 11), sse)
+plt.xticks(range(1, 11))
+plt.xlabel("Number of Clusters")
+plt.ylabel("SSE")
+plt.show()
+```
+<img src="img/kmeans.png"/>
