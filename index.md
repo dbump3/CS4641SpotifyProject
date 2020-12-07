@@ -106,7 +106,7 @@ Before actually creating the supervised learning model, we made a simple represe
 
 Although the actual model is much more complex, here it can be appreciated how the decision tree finds an appropriate point to split the data that lowers the error on each subsequent leaf node.
 
-#img
+<img src="img/dec-tree.png"/>
 
 ### Data Pre-processing
 
@@ -118,18 +118,18 @@ We used a dataset with information about spotify songs and their features includ
 4. replaced zeros in tempo column.
 5. scaled the data by dividing popularity by 100
 
-### Decision Tree: Model
+### Decision Tree Implementation
 
 We then created a supervised model based on iterating through train and test data to find an optimal number of leaf nodes for our decision tree.
 As can be observed, as the maximum number of leaves increased, the Mean Squared Error of both the training set and testing set decreased.
 We decided a stop point of 178 max leaf nodes as an appropriate limit to the size of our tree.
 
-#img
+<img src="img/dec-tree-nodes.png"/>
 
 After comparing the actual popularity with the prediction from our decision tree, we did find a lot of variance but the correlation was in the expected direction.
 
-#img
-#img
+<img src="img/dec-tree-big.png"/>
+<img src="img/dec-tree-prediction.png"/>
 
 ### Results
 
