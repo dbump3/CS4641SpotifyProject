@@ -6,6 +6,13 @@
     - [Visualizations](#visualizations)
     - [Results](#results)
   - [K-means Clustering](#k-means-clustering)
+- [Supervised Learning](#supervised-learning)
+  - [Decision Tree](#decision-tree)
+    - [The Model](#the-model)
+    - [Data Pre-processing](#data-pre-processing)
+    - [Decision Tree Implementation](#decision-tree-implementation)
+    - [Results](#results)
+    - [Conclusions](#conclusions)
 
 # Summary
 
